@@ -20,6 +20,7 @@
     <script>
         $('img').attr('src','image/d.png');
         $('p').addClass('font')
+        $('p').arrt('class','hello')
     </script>
 </body>
 </html>
