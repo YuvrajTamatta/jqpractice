@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="../crud/assets/css/bootstrap.css">
    
 </head>
@@ -16,7 +16,7 @@
     <button id="show">show</button>
     <button id="toggle">toggle</button>
     <br> <br>
-    <img src="image/d.png" alt="" height="250px" width="250px">
+    <img src="d.png" alt="" height="250px" width="250px">
     <br> <br>
     <button id="fadein">fadein</button>
     <button id="fadeout">fadeout</button>
@@ -25,7 +25,7 @@
     </div>
 
     <div>
-    <img src="image/e.png" alt="" height="200px" width="200px" id="img1">
+    <img src="e.png" alt="" height="200px" width="200px" id="img1">
    <button id="slideup">Slide-up</button>
    <button id="slidedown">Slide-down</button>
    <button id="slider">Slideer</button>
