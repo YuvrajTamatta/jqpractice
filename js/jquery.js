@@ -10,6 +10,10 @@ $(function(){
     $('#elm').before('<h3>this is added</h3>')
 })
 
+$(function(){
+    $('#division').css('background-color','red')
+})
+
 $('document').ready(function(){
     $('#button1').click(function(){
         $('#img3').animate({
@@ -18,6 +22,10 @@ $('document').ready(function(){
         width:'400px',              
     },1000)
     })
+})
+
+$("body",function(){
+    $("#division").css("background-color", "red")
 })
 
 $('document').ready(function(){

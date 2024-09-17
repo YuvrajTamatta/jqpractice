@@ -55,6 +55,8 @@ $(function () {
         }
     })
 
+    // $('ul li').empty()
+
     // $('body').on('click', '#dark', function () {
     //     if ($("body").hasClass("bg-dark")) {
     //         $("body").removeClass("bg-dark");
@@ -65,6 +67,7 @@ $(function () {
     //         $(this).text("OFF");
     //     }
     // })
+
     $('body').on('click','#dark',function(){
              $('body').toggleClass('bg-dark')
         $('body').toggleClass('text-light')

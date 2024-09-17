@@ -14,30 +14,7 @@
     }
 </style>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">MyBrand</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+
 
 <button id="button1">Animae</button>
     <img id="img3" src="image/d.png" alt="" height="50px" width="50px" style="position: absolute;">
@@ -57,7 +34,7 @@
 
 <div class="outer">
     <div class="inner">
-        <p>Paragraph inside</p>
+        <p id="parag">Paragraph inside</p>
     </div>
 </div>
 
@@ -83,6 +60,10 @@
    <button id="slider">Slideer</button>
 
     </div>
+  </div>
+
+  <div class="yuvraj">
+    <p>hello world</p>
   </div>
     
     
