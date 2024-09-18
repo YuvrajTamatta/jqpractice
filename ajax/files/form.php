@@ -6,6 +6,7 @@
     <title>Form</title>
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
     <script src="../assets/js/custom.js"></script>
 </head>
 <body>
@@ -59,16 +60,20 @@
     <div id="results">
         <table class="table">
             <thead>
+                <th>ID</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
                 <th scope="col">Actions</th>
             </thead>
-            <tbody>
-                
+            <tbody id="tbody">
+
             </tbody>
         </table>
 
     </div>
+</div>
+<div id="datas">
+
 </div>
 
     
