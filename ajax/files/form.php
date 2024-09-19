@@ -8,6 +8,7 @@
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/jquery-ui.min.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -58,7 +59,13 @@
     <input type="submit" name="submit" class="btn btn-outline-primary my-3" value="submit">
     </form>
     <div id="results">
-        <table class="table">
+        <table class="table " >
+          <div id="searchitem" class="d-flex justify-content-between">
+            <h3>Records</h3>
+            <div>
+            <input type="text" id="srchstring" ><i class="fa-solid fa-magnifying-glass fs-5 ms-2"></i>
+            </div>
+          </div>
             <thead>
                 <th>ID</th>
                 <th scope="col">Name</th>
