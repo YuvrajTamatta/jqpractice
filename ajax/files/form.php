@@ -61,7 +61,7 @@
     <div id="results">
         <table class="table " >
           <div id="searchitem" class="d-flex justify-content-between">
-            <h3>Records</h3>
+            <button class="show-records btn btn-info">Show Records</button>
             <div>
             <input type="text" id="srchstring" ><i class="fa-solid fa-magnifying-glass fs-5 ms-2"></i>
             </div>

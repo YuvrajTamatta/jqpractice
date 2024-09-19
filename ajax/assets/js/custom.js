@@ -1,6 +1,9 @@
 $(function () {
-    $("table").hide()
     $("#searchitem").hide()
+    $('body').on('click','.show-records',function(){
+        $("table").toggle()  
+        $("#searchitem").toggle()
+    })
     $.ajax({
         url: "view.php",
         type: "GET",
@@ -12,11 +15,27 @@ $(function () {
                 <td>${value.id}</td>                
                 <td>${value.name}</td>
                 <td>${value.email}</td>
-                <td> <button class="btn btn-success btn-sm">edit</button>
+                <td> <button class="btn btn-success btn-sm" data-id=${value.id} id="clientEditeBtn">edit</button>
                  <button class="btn btn-danger btn-sm" data-id=${value.id} id="clientDeleteBtn"> delete</button></td>
                 </tr>`)
         })
     });
+
+    $('body').on('click','#clientEditeBtn',function(){
+        var edid=$(this).data("id")
+        $.ajax({
+            url:`view.php?id=${edid}`,
+            tyep:'post',
+            dataType:'json'
+        }).done(function(res){
+            $.each(res,function(index,value){
+                $('#naem').val(value.name)
+                $('#email').val(value.email)
+                $('#password').val(value.password)
+
+            })
+        })
+    })
 
     $(document).on('click', '.btn-danger', function() {
         
@@ -45,8 +64,7 @@ $(function () {
         }).done(function (res) {
             alert("Data inserted")
             $("#myform").trigger("reset")
-            $("table").show()
-            $("#searchitem").show()
+          
         })
     })
 
@@ -58,6 +76,8 @@ $(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
         })
     })
+
+  
 
 
    
