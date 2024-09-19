@@ -22,13 +22,24 @@
         </div>
 
         <div class="content">
-            <div class="tab_content tab_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, cum. Itaque reprehenderit pariatur numquam tempore non necessitatibus quis. Illum vitae atque iure ratione accusantium quod, esse ut id. Molestiae, illo.</div>
+            <div class="tab_content tab_1">
+                <img src="image/d.png" alt="" height="300px" width="300px">
+            </div>
 
-            <div class="tab_content tab_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi atque iusto culpa. Temporibus excepturi assumenda enim nulla aut vitae cupiditate quasi? Placeat corporis, consectetur quis est excepturi neque laboriosam in, corrupti dolore, saepe quibusdam adipisci voluptatum atque earum velit deleniti facere ut eaque inventore natus architecto ipsam esse ex! Aperiam, ratione. Exercitationem totam voluptate odit. Magnam ad sapiente natus?</div>
+            <div class="tab_content tab_2">
+            <img src="image/12.webp" alt="" height="300px" width="300px">
 
-            <div class="tab_content tab_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, cum. Itaque reprehenderit pariatur numquam tempore non necessitatibus quis. Illum vitae atque iure ratione accusantium quod, esse ut id. Molestiae, illo.</div>
+            </div>
 
-            <div class="tab_content tab_4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque modi atque iusto culpa. Temporibus excepturi assumenda enim nulla aut vitae cupiditate quasi? Placeat corporis, consectetur quis est excepturi neque laboriosam in, corrupti dolore, saepe quibusdam adipisci voluptatum atque earum velit deleniti facere ut eaque inventore natus architecto ipsam esse ex! Aperiam, ratione. Exercitationem totam voluptate odit. Magnam ad sapiente natus?</div>
+            <div class="tab_content tab_3">
+            <img src="image/e.png" alt="" height="300px" width="300px">
+
+            </div>
+
+            <div class="tab_content tab_4">
+            <img src="image/image.jpg" alt="" height="300px" width="300px">
+
+            </div>
 
         </div>
 
