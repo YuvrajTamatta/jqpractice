@@ -50,6 +50,7 @@
 
 <div class="container"  >
     <form action="#" method="post" id="myform" >
+      <input type="hidden" name="id"  id="id">
     <label for="name" class="form-label">Name</label>
     <input type="text" name="name" id="name" class="form-control">
     <label for="email" class="form-label">Email</label>
@@ -61,7 +62,7 @@
     <div id="results">
         <table class="table " >
           <div id="searchitem" class="d-flex justify-content-between">
-            <button class="show-records btn btn-info">Show Records</button>
+            <button class="show-records btn btn-info">Hide Records</button>
             <div>
             <input type="text" id="srchstring" ><i class="fa-solid fa-magnifying-glass fs-5 ms-2"></i>
             </div>

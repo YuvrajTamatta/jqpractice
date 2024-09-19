@@ -1,13 +1,16 @@
 $(function () {
     $("#searchitem").hide()
-    $('body').on('click','.show-records',function(){
-        $("table").toggle()  
+    $('body').on('click', '.show-records', function () {
+        $("table").toggle(1000)
         $("#searchitem").toggle()
+       
     })
+  
+
     $.ajax({
         url: "view.php",
         type: "GET",
-        dataType: "JSON" 
+        dataType: "JSON"
     }).done(function (res) {
         $.each(res, function (index, value) {
 
@@ -21,36 +24,36 @@ $(function () {
         })
     });
 
-    $('body').on('click','#clientEditeBtn',function(){
-        var edid=$(this).data("id")
+    $('body').on('click', '#clientEditeBtn', function () {
+        var edid = $(this).data("id")
         $.ajax({
-            url:`view.php?id=${edid}`,
-            tyep:'post',
-            dataType:'json'
-        }).done(function(res){
-            $.each(res,function(index,value){
-                $('#naem').val(value.name)
-                $('#email').val(value.email)
-                $('#password').val(value.password)
+            url: `view.php?id=${edid}`,
+            tyep: 'post',
+            dataType: 'json'
+        }).done(function (res) {
+            $('#id').val(res.id)
+            $('#name').val(res.name)
+            $('#email').val(res.email)
+            $('#password').val(res.password)
 
-            })
+
         })
     })
 
-    $(document).on('click', '.btn-danger', function() {
-        
+    $(document).on('click', '.btn-danger', function () {
+
         var id = $(this).data('id');
         console.log(id);
-        
+
         $.ajax({
             url: `delete.php?id=${id}`,
             type: 'POST',
             dataType: 'html',
-        }).done(function(res) {
+        }).done(function (res) {
             location.reload();
         });
     });
-    
+
 
     $("body").on("submit", "#myform", function (e) {
         e.preventDefault()
@@ -62,25 +65,26 @@ $(function () {
             datatype: "json",
             data: formdata
         }).done(function (res) {
-            alert("Data inserted")
+            $('input[name="id"]').val("");
+            alert(res)
             $("#myform").trigger("reset")
-          
+
         })
     })
 
 
 
-    $("body").on("keyup","#srchstring",function(){
+    $("body").on("keyup", "#srchstring", function () {
         let val = $(this).val().toLowerCase()
-        $("#tbody tr").filter(function(){
-            $(this).toggle($(this).text().toLowerCase().indexOf(value)> -1)
+        $("#tbody tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         })
     })
 
-  
 
 
-   
-// ending
+
+
+    // ending
 })
 
