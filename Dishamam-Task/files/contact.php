@@ -35,7 +35,7 @@
             </center>
             <label for="company" class="form-label">Company</label>
             <select name="customer" id="customer" class="form-select">
-                   <option value="Cus"></option>             
+                   <option value="Cus">Select Company</option>             
             </select>
             <br>
 
@@ -54,10 +54,11 @@
             <label for="password" class="form-label">Password</label>
             <input type="text" class="form-control" name="password" id="password">
 
-            <label for="primary" class="form-label">primary contact</label>
-            <input type="checkbox" class="form-input-control" checked>
+            <label for="primary" class="form-label mt-3">primary contact</label>
+            <input type="checkbox" class="form-input-control form-check-input mt-3 ms-2">
 
-            <center> <input type="submit" name="submit" id="submit" class="btn btn-primary w-25 mt-3">
+
+            <center> <input type="submit" name="submit" id="submit" class="btn btn-primary w-25 mt-3 ">
             </center>
         </form>
     </div>

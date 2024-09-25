@@ -12,7 +12,7 @@ include_once('connection.php');
     $execute=mysqli_query($connect, $insert);
 
     if($execute){
-        echo "Data inserted";
+     echo json_encode("Data Inserted");
     }
  
 

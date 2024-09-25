@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,6 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.css">
     <script src="../assets/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
 </head>
 
 <body>
@@ -35,8 +35,9 @@
             <center>
                 <h3 class="my-3">Customer Registration</h3>
             </center>
+            <div class="response"></div>
             <label for="company" class="form-label">Company</label>
-            <input type="text" class="form-control" name="company" id="company">
+            <input type="text" class="form-control" name="company" id="company" oninput="this.value=this.value.replace(/[^a-zA-Z\s]/g,'')">
 
             <label for="phone" class="form-label">Phone</label>
             <input type="text" class="form-control" name="phone" id="phone">
@@ -51,29 +52,9 @@
             </center>
         </form>
     </div>
+    <script>
+
+    </script>
 </body>
 
 </html>
-
-<?php 
-include_once('connection.php');
-    if(!empty($_POST)){
-    $company=$_POST['company'];
-    $phone=$_POST['phone'];
-    $city=$_POST['city'];
-    $state=$_POST['state'];
-
-    $insert="INSERT INTO customer(`company`, `phone`, `city`, `state`) VALUES ('$company','$phone',
-    '$city','$state')";
-
-    $execute=mysqli_query($connect, $insert);
-
-    if($execute){
-        $mess = "Data inserted";
-    }
- 
-
- 
-  }
-
-?>

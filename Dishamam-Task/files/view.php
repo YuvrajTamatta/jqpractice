@@ -7,5 +7,6 @@ $execute=mysqli_query($connect,$view);
 
 $data=mysqli_fetch_all($execute,MYSQLI_ASSOC);
 
-json_encode($data);
+echo json_encode($data);
+
 ?>
