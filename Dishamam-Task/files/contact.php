@@ -29,7 +29,8 @@
     </nav>
 
     <div class="container">
-        <form method="post" id="customerform">
+        <form method="post" id="contactform">
+            <div class="response"></div>
             <center>
                 <h3 class="my-3">Contact</h3>
             </center>
@@ -40,10 +41,10 @@
             <br>
 
             <label for="first name" class="form-label">First Name</label>
-            <input type="text" class="form-control" name="first name" id="first name">
+            <input type="text" class="form-control" name="first_name" id="first name">
 
             <label for="last name" class="form-label">Last Name</label>
-            <input type="text" class="form-control" name="last name" id="last name">
+            <input type="text" class="form-control" name="last_name" id="last name">
 
             <label for="email" class="form-label">Email</label>
             <input type="text" class="form-control" name="email" id="email">
@@ -55,7 +56,7 @@
             <input type="text" class="form-control" name="password" id="password">
 
             <label for="primary" class="form-label mt-3">primary contact</label>
-            <input type="checkbox" class="form-input-control form-check-input mt-3 ms-2">
+            <input type="checkbox"  class="form-input-control form-check-input mt-3 ms-2" id="checkval" name="primary_contact">
 
 
             <center> <input type="submit" name="submit" id="submit" class="btn btn-primary w-25 mt-3 ">
