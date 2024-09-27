@@ -1,7 +1,7 @@
 <?php
 include_once("../vendor/autoload.php");
 
-// $connect=mysqli_connect('localhost','ajaxdata','ajaxdata','ajaxdata');
+$connect=mysqli_connect('localhost','ajaxdata','ajaxdata','ajaxdata');
 class  connection
 {
     public $localhost = "localhost";
@@ -17,19 +17,19 @@ class  connection
         return $this->db;
     }
 
+    function delete($table,$condition){
+       return "DELETE FROM $table WHERE $condition";
+    }
+
     function select($table)
     {
         $select = "select * from $table";
         $res = mysqli_query($this->db, $select);
         $row = mysqli_fetch_all($res, MYSQLI_ASSOC);
-
         return $row;
     }
 }
 
 $con = new connection();
-d($con);
 
-echo '<pre>';
-print_r($con->select("customer"));
-echo '</pre>';
+
