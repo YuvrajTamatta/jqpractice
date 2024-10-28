@@ -15,8 +15,6 @@
     background-image: url('../assets/images/4.jpg');
     background-repeat: no-repeat;
     background-size: auto;
-
-
   }
  
 </style>

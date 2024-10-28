@@ -8,6 +8,8 @@ $(function () {
     //     }
     // })
 
+    
+
     (() => {
         'use strict'
 
@@ -246,6 +248,38 @@ $('body').on('submit','#projectform',function(e){
 
 })
 
-            
+$.ajax({
+    url:'view.php?type=project',
+    type:'get',
+    dataType:'json'
+}).done(function(res){
+    if (res.length > 0) {
+        $('#projectdata').empty()
+        $.each(res, function (i, v) {
+            $('#projectdata').append(`<tr> 
+                <td>${v.project_name}</td>
+                <td>${v.customer}</td>
+                <td>${v.start_date}</td>
+                <td>${v.end_date}</td>
+                <td>${v.Created_At}</td>
+             <td>
+                   <button class="btn btn-sm btn-success me-2" id="customeredit" value=${v.id}> Edit </button>
+                <button class="btn btn-sm btn-danger" id="customerdelete" value=${v.id}>delete </button>
+             </td>
+            </tr>`);
+        });
+    } else {
+        alert('No data found.');
+    }
+
+}).fail(function (xhr, status, error) {
+    console.log("AJAX request failed: " + status + ", " + error);
+    
+});
+
+
+
 })
+
+            
 
